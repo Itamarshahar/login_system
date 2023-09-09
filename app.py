@@ -83,7 +83,6 @@ def signup():
 def dashboard():
     return render_template('dashboard.html', name=current_user.username)
 
-
 @app.route('/logout')
 @login_required
 def logout():
